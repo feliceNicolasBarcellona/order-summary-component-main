@@ -5,7 +5,204 @@
   --desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
   --font-size-16: 16px;
+  --font-family: 'Red Hat Display', sans-serif;
   --font-weight-500: 500;
   --font-weight-700: 700;
   --font-weight-900: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+html {
+  font-size: var(--font-size-16);
+}
+
+body {
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-color: var(--pale-blue);
+}
+
+main {
+  height: 98vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 698px;
+  width: 451px;
+  background-color: hsl(360, 100%, 100%);
+  border-radius: 1.25rem;
+  margin: 0.875rem;
+  box-shadow:
+      0 1px 1px hsl(223deg 47% 23% / 0.075),
+      0 2px 2px hsl(223deg 47% 23% / 0.075),
+      0 4px 4px hsl(223deg 47% 23% / 0.075),
+      0 8px 8px hsl(223deg 47% 23% / 0.075),
+      0 16px 16px hsl(223deg 47% 23% / 0.075);
+}
+
+.illustration-section {
+  height: 13.75rem;
+}
+
+.illustration{
+  border-radius: 1.25rem 1.25rem 0 0;
+  width: 100%;
+  display: block;
+}
+
+.body {
+  text-align: center;
+  padding: 0px 3rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-top: 2.8125rem;
+  margin-bottom: 1.0625rem;
+}
+
+.description {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6em;
+  letter-spacing: 0.25px;
+  margin-bottom: 1.25rem;
+}
+
+.plan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5625rem;
+  margin-bottom: 2rem;
+}
+
+.plan-desc {
+  margin-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.annual-plan {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+
+.price {
+  color:hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.change-label {
+  color: hsl(245, 75%, 52%);
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.change-label:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.btn {
+  border: none; 
+  width:100%;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(360, 100%, 100%);
+  height: 3.1875rem;
+  border-radius: 0.625rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  box-shadow: 0px 1.4375rem 1.25rem 0px var(--pale-blue)
+}
+
+.btn:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.cancel {
+  font-size: 0.9688rem; 
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+.cancel:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.attribution { 
+  font-size: 0.6875rem; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 500px) {
+  
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-size: 100% 27%;
+    font-size: 14.5px;
+  }
+
+  .card {
+    width: 327px;
+    height: 568px;
+  }
+
+  .illustration-section {
+    height: 10rem;
+  }
+
+  .body {
+    padding: 0 1.5625rem;
+  }
+
+  .title {
+    font-size: 1.3594rem;
+    margin-top: 2.0625rem;
+    font-weight: var(--font-weight-700);
+  }
+
+  .description {
+    margin-bottom: 1.5625rem;
+  }
+
+  .plan {
+    padding: 0.9375rem;
+    margin-bottom: 1.625rem;
+  }
+
+  .plan-desc {
+    justify-content: space-evenly;
+  }
+
+  .change-label {
+    font-size: 0.8438rem;
+  }
+
+  .btn {
+    margin-bottom: 1.5rem;
+  }
+ 
 }
