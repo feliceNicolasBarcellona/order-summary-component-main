@@ -1,0 +1,53 @@
+@media only screen and (max-width: 480px) {
+  
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-size: 100% 27%;
+    font-size: 14.5px;
+  }
+
+  .card {
+    width: 327px;
+    height: 568px;
+  }
+
+  .illustration-section {
+    height: 10rem;
+  }
+
+  .body {
+    padding: 0 1.5625rem;
+  }
+
+  .title {
+    font-size: 1.3594rem;
+    margin-top: 2.0625rem;
+    font-weight: var(--font-weight-700);
+  }
+
+  .description {
+    margin-bottom: 1.5625rem;
+  }
+
+  br {
+    display: block;
+  }
+
+  .plan {
+    padding: 0.9375rem;
+    margin-bottom: 1.625rem;
+  }
+
+  .plan-desc {
+    justify-content: space-evenly;
+  }
+
+  .change-label {
+    font-size: 0.8438rem;
+  }
+
+  .btn {
+    margin-bottom: 1.5rem;
+  }
+ 
+}
